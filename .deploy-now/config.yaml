@@ -46,3 +46,10 @@ deploy:
       - php artisan storage:link
       - php artisan optimize
       - php artisan up
+
+# uncomment the following lines to configure cron jobs
+#runtime:
+#  cron-jobs:
+#    - command: my-cron-job-command # the deployment is located at $HOME/htdocs/ to execute a deployed script just prefix it accordingly
+#      schedule: 0 5 * * * # run every day at 5:00
+#      mailto: me@mail.com # optional mail address to which the output of command is send
